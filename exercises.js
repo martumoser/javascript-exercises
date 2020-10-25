@@ -106,3 +106,63 @@ for (var i=0;i<10;i++){
     empty [i]= i;
 }
 console.log(empty);
+
+/* Function */
+/* Item a */
+function suma(num1,num2){
+    return num1 + num2;
+}
+var rtdo= suma(22,10);
+console.log(rtdo);
+/* Item b */
+function suma(num1,num2){
+    if (isNaN(num1) || isNaN(num2)){
+        alert ("Not a number");
+        return NaN;
+    }
+    return num1 + num2;
+}
+/* Example to check if the function works.
+var rtdo= suma("hola",10);
+console.log(rtdo);*/
+/* Item c */
+function validateInteger(x){
+    if (Number.isInteger(x)){
+        return "True";
+    }
+}
+/* Item d */
+function suma(num1,num2){
+    if (isNaN(num1) || isNaN(num2)){
+        alert ("Not a number");
+        return NaN;
+    } else if (Number.isInteger(num1) && Number.isInteger(num2)){
+        return num1 + num2;
+    } else {
+        alert ("The numbers aren't integers");
+        return Math.round(num1,num2);
+    }
+}
+/* Example to check if the function works.
+var rtdo= suma(10.7,10);
+console.log(rtdo);*/
+/* Item e */
+function validateNaN(num1,num2){
+    if (isNaN(num1) || isNaN(num2)){
+        alert ("Not a number");
+        return NaN;
+    } else{
+        return "The parameters are numbers";
+    }
+}
+function suma(num1,num2){
+    var result = validateNaN(num1,num2);
+    if (result === "The parameters are numbers"){
+        return num1 + num2;
+    } else{
+        return "The parameters aren't numbers";
+    }
+}
+/* Example to check if the function works.
+var output = suma("hola",3);
+console.log(output); */
