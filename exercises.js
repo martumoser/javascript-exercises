@@ -15,7 +15,7 @@
 /*Strings*/
  /* Item a */
  var var1 = "environment";
- var var1UpperCase = (var1 .toUpperCase());
+ var var1UpperCase = (var1.toUpperCase());
  /* Item b */
  var weather = "thunderstorm";
  var today = (weather.substring(5,0));
@@ -24,7 +24,7 @@
  var day = (weather2.substring(12,9));
  /* Item d */
  var org = "organization"; 
- var orgNew = (org.substring(0,1).toLocaleUpperCase()+ org.substring(1).toLowerCase());
+ var orgNew = (org.substring(0,1).toUpperCase()+ org.substring(1).toLowerCase());
  /* Item e */
  var name = "my name is Martina";
  var blank = (name.indexOf(" "));
@@ -67,9 +67,9 @@
  }
  /* Item b */
  var age = 25;
-if (age<2){
+ if (age<2){
     alert ("Bebe");
-} else if (age<12){
+ } else if (age<12){
     alert ("Niño");
     } else if (age<19){
         alert("Adolescente");
@@ -82,3 +82,27 @@ if (age<2){
                     } else{
                         alert("Anciado");
                     }
+
+/* For */
+/* Item a */
+var words = ["hello", "goodbay", "love", "peace","happy"];
+for (var i=0;i<words.length;i++){
+    alert(words[i]);
+}
+/* Item b */
+for (var i=0;i<words.length;i++){
+    words[i] = words[i].substring(0,1).toUpperCase()+ words[i].substring(1).toLowerCase();
+    alert("Uppercase modified: " + words[i]);
+}
+/* Item c */
+var sentence = [];
+for (var i=0;i<words.length;i++){
+    sentence [i]= words[i];
+}
+alert (sentence);
+/* Item d */
+var empty = [];
+for (var i=0;i<10;i++){
+    empty [i]= i;
+}
+console.log(empty);
