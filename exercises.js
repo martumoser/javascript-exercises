@@ -57,3 +57,28 @@
  var copy = months.slice(4,-1);
  console.log (copy);
 
+/* If/Else */
+ /* Item a */
+ var number = (Math.random());
+ if (number >= 0.5){
+    alert("Greater than 0,5");
+ } else{
+    alert("Lower than 0,5");
+ }
+ /* Item b */
+ var age = 25;
+if (age<2){
+    alert ("Bebe");
+} else if (age<12){
+    alert ("Niño");
+    } else if (age<19){
+        alert("Adolescente");
+        } else if (age<30){
+            alert("Joven");
+            } else if (age<60){
+                alert ("Adulto");
+                } else if (age<75){
+                    alert("Adulto mayor");
+                    } else{
+                        alert("Anciado");
+                    }
