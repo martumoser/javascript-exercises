@@ -29,6 +29,13 @@
  var name = "my name is Martina";
  var blank = (name.indexOf(" "));
  /* Item f */
+ var varf = "international goverment";
+ var varfI = varf.substring(0,1).toUpperCase();
+ var varfIrest = varf.substring(1,varf.indexOf("g")).toLowerCase();
+ var varfG = varf.substring(varf.indexOf("g"),15).toUpperCase();
+ var varfGrest = varf.substring(15).toLowerCase();
+ var final = varfI + varfIrest + varfG + varfGrest;
+ console.log(final)
  
 /* Arrays */
  /* Item a */
