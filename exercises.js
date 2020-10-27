@@ -76,15 +76,15 @@
  var age = 25;
  if (age<2){
     alert ("Bebe");
- } else if (age<12){
+ } else if (age>=2 && age<=12){
     alert ("Niño");
-    } else if (age<19){
+    } else if (age>=13 && age<=19){
         alert("Adolescente");
-        } else if (age<30){
+        } else if (age>=20 && age<=30){
             alert("Joven");
-            } else if (age<60){
+            } else if (age>=31 && age<=60){
                 alert ("Adulto");
-                } else if (age<75){
+                } else if (age>=61 && age<=75){
                     alert("Adulto mayor");
                     } else{
                         alert("Anciado");
@@ -98,15 +98,17 @@ for (var i=0;i<words.length;i++){
 }
 /* Item b */
 for (var i=0;i<words.length;i++){
-    words[i] = words[i].substring(0,1).toUpperCase()+ words[i].substring(1).toLowerCase();
-    alert("Uppercase modified: " + words[i]);
+    wordsUppercase= words[i].substring(0,1).toUpperCase()+ words[i].substring(1).toLowerCase();
+    alert("Uppercase modified: " + wordsUppercase);
 }
 /* Item c */
-var sentence = [];
+var sentence = "";
 for (var i=0;i<words.length;i++){
-    sentence [i]= words[i];
+    sentence = sentence + " " + words[i];
 }
-alert (sentence);
+alert (sentence)
+console.log(sentence)
+
 /* Item d */
 var empty = [];
 for (var i=0;i<10;i++){
